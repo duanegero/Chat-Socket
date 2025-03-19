@@ -1,0 +1,20 @@
+version: '3.8'
+
+networks:
+  Chat-Network:
+    external: true
+
+services:
+  socket-server:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: chat-socket:latest
+    container_name: socket-server
+    ports:
+      - "3007:3007" 
+    networks:
+      - Chat-Network 
+    environment:
+      - PORT=3007 
+    restart: unless-stopped

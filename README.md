@@ -17,22 +17,28 @@ This is a real-time chat server built using Socket.IO, allowing users to connect
 
 ## Docker
 
-1. CREATE DOCKER NETWORK! - Before proceeding with the containers, you need to create a Docker network. This network allows the containers to communicate with each other. Run the following command to create the network:  
+1. **CREATE DOCKER NETWORK!** - Before proceeding with the containers, you need to create a Docker network. This network allows the containers to communicate with each other. Run the following command to create the network:  
    `docker network create Chat-Network`
-2. Verify the Network Creation - After creating the network, you can verify that it exists by listing the available networks with this command:
+2. **Verify the Network Creation** - After creating the network, you can verify that it exists by listing the available networks with this command:
    `docker network ls`
-3. Build and Start the Docker Container - To build the Docker container and start the services defined in the docker-compose.yml file, run the following command:
+3. **Build and Start the Docker Container** - To build the Docker container and start the services defined in the docker-compose.yml file, run the following command:
    `docker-compose up --build`
-4. Verify the Container Creation - After building and running the container, you can verify that it is up and running with the following command:
+4. **Verify the Container Creation** - After building and running the container, you can verify that it is up and running with the following command:
    `docker ps`
-5. Shut Down the Docker Containers - Once you're done with using the containers, you can stop and remove the containers with the following command:
+5. **Shut Down the Docker Containers** - Once you're done with using the containers, you can stop and remove the containers with the following command:
    `docker-compose down`
 
 ## Usage
 
-Once the Docker network and container are up and running, you can interact with others connect to the socket via chat in the frontend.
+Once the Docker network and container are up and running, you can interact with others connected to the socket via chat in the frontend.
 
 ## Frontend
+
+The Frontend React + Vite app can be found here
+
+https://github.com/duanegero/Chat-App.git
+
+For more information, please refer to the Frontend App Documentation for details on navigating the user interface, interacting with chat features, and managing user accounts.
 
 ## Backend
 

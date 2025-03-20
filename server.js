@@ -23,6 +23,7 @@ io.on("connection", (socket) => {
   //using handshake to query the url for username
   const username = socket.handshake.query.username;
 
+  //assigning username to the socket username
   socket.username = username;
 
   //log the user's ID
